@@ -1,5 +1,6 @@
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
       background-image: url("../assets/777.gif");
       background-repeat: repeat;
       background-size: 220px 220px;
@@ -17,16 +18,45 @@ body{
 
 aside {
   border:2px solid #ff00ff;
-  background-color:#e9a6e7;
+  background-color:#000000;
   margin:5px;
+  height: 180px;
   width:40%;
   padding:5px;
+  overflow: scroll;
+  overflow-x: hidden
 }
 
 main{
   border:2px solid #ff00ff;
-  background-color:#e9a6e7;
+  background-color:#000000;
   margin:5px;
   width:100%;
   padding:5px;
+}
+
+.flex .width-30{
+    border:2px solid #ff00ff;
+  background-color:#000000;
+  margin:5px;
+  width:33%;
+  padding:5px;
+}
+
+.flex .h3{
+    font-style:italic;
+}
+
+.inner-row {
+    display: flex;
+    gap: 10px;
+}
+
+.inner-box {
+    flex: 1;
+    padding: 10px;
+}
+
+.inner-box textarea{
+    height: 100%;
 }
