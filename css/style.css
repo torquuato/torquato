@@ -166,7 +166,7 @@ main{
   width: 6px;
 }
 .height-600::-webkit-scrollbar-thumb {
-    background: #ff00ff;
+    background: #00ff00;
 }
 
 .height-300-width-100 {
@@ -194,4 +194,9 @@ main{
   height: 200px;
   position: absolute;
   transition: transform 0.3s ease;
+}
+
+.height-600 .stamps-about img{
+  width: 99px;
+  height: 55px;
 }
