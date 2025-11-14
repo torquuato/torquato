@@ -1,11 +1,33 @@
 
 body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
       background-image: url("../assets/777.gif");
       background-repeat: repeat;
       background-size: 220px 220px;
 }
 
+.content-wrapper{
+  width: fit-content; 
+    margin: 0 auto; 
+}
+
 .flex {
   display:flex;
   justify-content:center;
+}
+
+aside {
+  border:2px solid #ff00ff;
+  background-color:#e9a6e7;
+  margin:5px;
+  width:40%;
+  padding:5px;
+}
+
+main{
+  border:2px solid #ff00ff;
+  background-color:#e9a6e7;
+  margin:5px;
+  width:100%;
+  padding:5px;
 }
