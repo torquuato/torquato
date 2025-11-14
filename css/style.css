@@ -111,3 +111,43 @@ main{
 .hollis iframe{
   background-color: #ff00ff;
 }
+
+.profile-box {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.profile-left {
+    flex: 0 0 auto;
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.profile-name {
+    margin: 0;
+    font-style: italic;
+}
+
+.button-list {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 120px;
+    overflow-y: auto;
+    padding-right: 4px;
+    align-items: center;
+}
+
+.button-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.button-list::-webkit-scrollbar-thumb {
+    background: #ff00ff;
+}
