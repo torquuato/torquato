@@ -1,0 +1,11 @@
+
+body{
+      background-image: url("/assets/777.gif");
+      background-repeat: repeat;
+      background-size: 220px 220px;
+}
+
+.flex {
+  display:flex;
+  justify-content:center;
+}
