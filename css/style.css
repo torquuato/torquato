@@ -60,3 +60,9 @@ main{
 .inner-box textarea{
     height: 100%;
 }
+
+.webrings{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
