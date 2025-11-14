@@ -3,8 +3,19 @@ body{
   color: #ffffff;
       background-image: url("../assets/777.gif");
       background-repeat: repeat;
+      overflow: hidden;
+      background: url('../assets/777.gif') repeat;
       background-size: 220px 220px;
-}
+      animation: bg-scrolling 150s linear infinite;
+        }
+        @keyframes bg-scrolling {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 100%;
+            }
+        }
 
 .content-wrapper{
   width: 1255px; 
