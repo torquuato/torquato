@@ -44,6 +44,12 @@ aside {
   overflow: scroll;
   overflow-x: hidden
 }
+aside::-webkit-scrollbar{
+  width: 6px;
+}
+aside::-webkit-scrollbar-thumb {
+    background: #00ff00;
+}
 
 main{
   border:2px solid #ff00ff;
