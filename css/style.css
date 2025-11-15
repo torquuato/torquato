@@ -267,3 +267,22 @@ iframe {
 .webrings li p{
   margin: 0px;
 }
+
+#flood {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0 !important;
+}
+
+.header {
+    position: relative;
+    z-index: -1;
+}
+
+body *:not(.header):not(.header *) {
+    position: relative;
+    z-index: 1;
+}
