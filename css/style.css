@@ -227,6 +227,7 @@ main{
 iframe {
     position: relative;
     z-index: 10;    
+}
 
 .webrings{
   max-height: 100%;
