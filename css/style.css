@@ -21,17 +21,23 @@ body{
 .content-wrapper{
   width: 1255px; 
     margin: 0 auto; 
+    position: relative;
+    z-index: 0;
 }
 
 .flex {
   display:flex;
   justify-content:center;
+  position: relative;
+  z-index: 0;
 }
 
 .flex-2 {
   display:flex;
   justify-content:center;
   height: 195px;
+  position: relative;
+  z-index: 0;
 }
 
 a:visited {
@@ -48,7 +54,9 @@ aside {
   width:40%;
   padding:5px;
   overflow: scroll;
-  overflow-x: hidden
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0;
 }
 aside::-webkit-scrollbar{
   width: 6px;
@@ -63,6 +71,8 @@ main{
   margin:5px;
   width:100%;
   padding:5px;
+  position: relative;
+  z-index: 0;
 }
 
 .flex .width-30{
@@ -72,6 +82,8 @@ main{
   width:33%;
   height: 192px;
   padding:5px;
+  position: relative;
+  z-index: 0;
 }
 
 .flex .width-40{
@@ -80,6 +92,8 @@ main{
   margin:5px;
   width:47%;
   padding:5px;
+  position: relative;
+  z-index: 0;
 }
 
 .flex .h3{
@@ -89,11 +103,15 @@ main{
 .inner-row {
     display: flex;
     gap: 10px;
+    position: relative;
+    z-index: 0;
 }
 
 .inner-box {
     flex: 1;
     padding: 10px;
+    position: relative;
+    z-index: 0;
 }
 
 .inner-box textarea{
@@ -129,6 +147,8 @@ main{
     display: flex;
     gap: 10px;
     align-items: flex-start;
+    position: relative;
+    z-index: 0;
 }
 
 .profile-left {
@@ -174,6 +194,8 @@ main{
   padding:5px;
   overflow-y: auto;
   text-align: center;
+  position: relative;
+  z-index: 0;
 }
 .height-600::-webkit-scrollbar{
   width: 6px;
@@ -187,15 +209,16 @@ main{
   background-color:#000000;
   margin:5px;
   width:100%;
-  height:326px; /* your chosen height */
+  height:326px;
   padding:5px;
-  position: relative; /* VERY IMPORTANT */
+  position: relative;
+  z-index: 0;
 }
 
 .fishContainer {
   width: 100%;
-  height: 100%; /* Make fishContainer MATCH .height-300-width-100 */
-  position: relative; /* So fish positions correctly */
+  height: 100%;
+  position: relative;
   overflow: hidden;
 }
 
@@ -215,23 +238,24 @@ main{
 }
 
 #flood {
-    display: none;
-    position: fixed;
+    position: fixed !important;
     width: 100%;
     height: 100%;
-    top: 100%;
-    left: 0px;
-    z-index: 1 !important;
+    top: 0;
+    left: 0;
+    z-index: -1 !important;
 }
 
 iframe {
     position: relative;
-    z-index: 10;    
+    z-index: 10;
 }
 
 .webrings{
   max-height: 100%;
   overflow-y: scroll;
+  position: relative;
+  z-index: 0;
 }
 .webrings::-webkit-scrollbar{
   width: 6px;
