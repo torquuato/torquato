@@ -64,6 +64,7 @@ main{
   background-color:#000000;
   margin:5px;
   width:33%;
+  height: 192px;
   padding:5px;
 }
 
@@ -215,4 +216,18 @@ main{
     top: 100%;
     left: 0px;
     z-index: 1000;
+}
+.webrings{
+  max-height: 100%;
+  overflow-y: scroll;
+}
+.webrings::-webkit-scrollbar{
+  width: 6px;
+}
+.webrings::-webkit-scrollbar-thumb {
+    background: #00ff00;
+}
+
+.webrings li p{
+  margin: 0px;
 }
