@@ -34,6 +34,12 @@ body{
   height: 195px;
 }
 
+a:visited {
+  color: #aa00aa;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 aside {
   border:2px solid #ff00ff;
   background-color:#000000;
@@ -215,7 +221,7 @@ main{
     height: 100%;
     top: 100%;
     left: 0px;
-    z-index: 1000;
+    z-index: 1;
 }
 .webrings{
   max-height: 100%;
