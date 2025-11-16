@@ -1,105 +1,95 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>TORQUATO</title>
-    <link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico">
-    <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.2">
+<meta charset="UTF-8">
+<title>TORQUATO</title>
+<link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico">
+<link rel="stylesheet" href="/torquato/css/style.css?v=1.1.2">
 </head>
 
 <body>
-    <div class="content-wrapper">
-        <div class="clique-box">
-            <div class="flex">
-                <main>
-                    <a href="/torquato/home">
-                        <p style="text-align: center;">back to home.html</p>
-                    </a>
-                    <div class="flex">
-                        <img src="/torquato/assets/cliques.gif">
-                    </div>
-                    <div class="flex">
-                        <p>a collection of cliques im a part of hi.</p>
-                    </div>
+<div class="content-wrapper">
+<div class="clique-box">
+<div class="flex">
+<main>
+<a href="/torquato/home"><p style="text-align: center;">back to home.html</p></a>
 
-                    <p>pixelbill</p>
-                    <div class="flex">
-                        <!-- BINDER HTML -->
-                        <div class="pixelbinder">
-                            <a href="https://pixelbill.neocities.org/"><img id="pixelbutton"
-                                    src="/torquato/assets/pixelbill_site_button2.png"></a><!-- The site button, please keep this in! -->
-                            <!-- CLOSED BOOK -->
-                            <div id="Tab One" class="tabcontent">
-                                <div class="pixelbinderbg">
-                                    <img id="binderbackground" src="/torquato/assets/pixelbillbinderclosed-2.png">
-                                </div>
-                                <a onclick="openCity(event, 'Tab Two')"><button>open ↩</button></a>
-                            </div>
-                            <!-- PAGE -->
-                            <div id="Tab Two" class="tabcontent">
-                                <div class="pixelbinderbg">
-                                    <img id="binderbackground" src="/torquato/assets/pixelbillbinderbackground.png">
-                                    <a href="https://galissia.neocities.org/home" target="_blank"
-                                        title="Hamilton - made by galissia">
-                                        <img id="page1" src="/torquato/assets/pixelbill-hamilton-galissia.png">
-                                    </a>
-                                    <a href="https://cozyghostly.neocities.org/" target="_blank">
-                                        <img id="page2" src="/torquato/assets/pixiebill-wicked-cozyghostly.png"
-                                            title="wicked - made by cozyghostly">
-                                    </a>
-                                </div>
-                                <a onclick="openCity(event, 'Tab One')" id="defaultOpen"><button>↪ close</button></a>
-                                <a onclick="openCity(event, 'Tab Three')"><button>next ↩</button></a>
-                            </div>
-                            <!-- PAGE -->
-                            <div id="Tab Three" class="tabcontent">
-                                <div class="pixelbinderbg">
-                                    <img id="binderbackground" src="/torquato/assets/pixelbillbinderbackground.png">
-                                    <a href="https://six-letter-notion.neocities.org/" target="_blank">
-                                        <img id="page1" src="/torquato/assets/KinginYellowpixelbill-adornesibley.png"
-                                            title="king in yellow - made by adornesibley">
-                                    </a>
-                                    <a href="https://astersarchive.neocities.org/" target="_blank"
-                                        title="deathnote - made by aster's archive">
-                                        <img id="page2" src="/torquato/assets/deathnote-six letter notion.png">
-                                    </a>
-                                </div>
-                                <a onclick="openCity(event, 'Tab Two')"><button>↪ previous</button></a>
-                                <a onclick="openCity(event, 'Tab One')"><button>close ↩</button></a>
-                            </div>
-                                
-                            <!-- PAGE -->
-                        <!-- BINDER HTML -->
+<div class="flex"><img src="/torquato/assets/cliques.gif"></div>
+<div class="flex"><p>a collection of cliques im a part of hi.</p></div>
 
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
+<p>pixelbill</p>
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+<div class="flex">
+<div class="pixelbinder">
 
-    </script>
-    <!-- script that makes tabs funtion, goes right above footer -->
+<a href="https://pixelbill.neocities.org/"><img id="pixelbutton" src="/torquato/assets/pixelbill_site_button2.png"></a>
+
+<div id="Tab One" class="tabcontent">
+<div class="pixelbinderbg">
+<img id="binderbackground" src="/torquato/assets/pixelbillbinderclosed-2.png">
+</div>
+<a onclick="openCity(event, 'Tab Two')"><button>open ↩</button></a>
+</div>
+
+<div id="Tab Two" class="tabcontent">
+<div class="pixelbinderbg">
+<img id="binderbackground" src="/torquato/assets/pixelbillbinderbackground.png">
+<div class="binder-page">
+<div class="slot left-slot">
+<a href="https://galissia.neocities.org/home" target="_blank">
+<img class="poster" src="/torquato/assets/pixelbill-hamilton-galissia.png">
+</a>
+</div>
+<div class="slot right-slot">
+<a href="https://cozyghostly.neocities.org/" target="_blank">
+<img class="poster" src="/torquato/assets/pixiebill-wicked-cozyghostly.png">
+</a>
+</div>
+</div>
+</div>
+
+<a onclick="openCity(event, 'Tab One')" id="defaultOpen"><button>↪ close</button></a>
+<a onclick="openCity(event, 'Tab Three')"><button>next ↩</button></a>
+</div>
+
+<div id="Tab Three" class="tabcontent">
+<div class="pixelbinderbg">
+<img id="binderbackground" src="/torquato/assets/pixelbillbinderbackground.png">
+<div class="binder-page">
+<div class="slot left-slot">
+<a href="https://six-letter-notion.neocities.org/" target="_blank">
+<img class="poster" src="/torquato/assets/KinginYellowpixelbill-adornesibley.png">
+</a>
+</div>
+<div class="slot right-slot">
+<a href="https://astersarchive.neocities.org/" target="_blank">
+<img class="poster" src="/torquato/assets/deathnote-six letter notion.png">
+</a>
+</div>
+</div>
+</div>
+
+<a onclick="openCity(event, 'Tab Two')"><button>↪ previous</button></a>
+<a onclick="openCity(event, 'Tab One')"><button>close ↩</button></a>
+</div>
+
+</div>
+</div>
+</main>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName){
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for(i=0;i<tabcontent.length;i++){
+    tabcontent[i].style.display="none";
+  }
+  document.getElementById(cityName).style.display="block";
+}
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
-
 </html>
