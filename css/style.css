@@ -295,12 +295,10 @@ body *:not(.header):not(.header *) {
     z-index: 9999;
 }
 
-#music-box img {
-    width: 30;
-    height: 30px;
+#volume-slider {
+    width: 80px;
     cursor: pointer;
-    display: block;
-    margin: 5px 0;
+    margin-top: 5px;
 }
 
 #music-toggle {
