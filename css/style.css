@@ -299,8 +299,6 @@ body *:not(.header):not(.header *){
   text-align: left;
 }
 
-.tabcontent img{ position: absolute; }
-
 #binderbackground{ z-index:1 }
 
 .pixelbinder button{
