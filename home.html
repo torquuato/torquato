@@ -237,6 +237,26 @@
             </div>
         </div>
     </div>
+    <script>
+        const audio = document.getElementById("bg-music");
+        const allow = localStorage.getItem("allowAudio");
+
+        // Always allow volume slider to work
+        audio.volume = 0.5;
+
+        // If the user clicked Enter earlier, autoplay unmuted will work
+        if (allow === "true") {
+            audio.muted = false;
+            audio.play().catch(err => {
+                console.log("Autoplay blocked:", err);
+            });
+        } else {
+            // User went directly to the page (no prior click)
+            // Must start muted (browser rule)
+            audio.muted = true;
+            audio.play();
+        }
+    </script>
     <script src="/torquato/js/music.js"></script>
     <script src="https://melonking.net/scripts/flood.js"></script>
     <script>
