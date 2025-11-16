@@ -9,6 +9,20 @@
     <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.1">
   </head>
   <body>
+    <audio id="bg-music" src="/torquato/assets/music-mcln.mp3" autoplay loop></audio>
+
+    <script>
+        const audio = document.getElementById("bg-music");
+        audio.volume = 0.5;
+
+        audio.muted = false;
+        audio.play().catch(err => {
+            console.log("Autoplay blocked:", err);
+        });
+    </script>
+    <div id="music-box">
+        <p>&gt;music: liquid negrocity - homestuck (midnight crew)</p>
+    </div>
     <div class="content-wrapper">
       <div class="flex">
         <main>
