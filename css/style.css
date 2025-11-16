@@ -316,3 +316,60 @@ body *:not(.header):not(.header *) {
     z-index: 10000; 
     position: relative;
 }
+
+/* BINDER CSS */
+.tabcontent {display: none;}
+
+/* Wrapper and background for the whole widget */
+.pixelbinder {
+  width: fit-content;
+  position: relative;
+  padding: 10px;
+  background-image: url("Graphics/dark-stained-timber-13504-in-architextures.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  text-align: center;
+  image-rendering: pixelated;
+}
+
+/* Setting the binder section in place */
+.pixelbinderbg {
+  width: 181px;
+  height: 100px;
+  position: relative;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+
+/* Setting the images in place */
+.tabcontent img{position: absolute;}
+#binderbackground{z-index:1}
+#page1, #page2{z-index:2}
+#page1 {left: 17px;top: 9px;} /* For the left pixelbill */
+#page2 {left: 110px;top: 9px;} /*For the right pixelbill */
+
+/* Image opacity on hover, you can change this to be whatever you want them to do */
+.pixelbinder a img:hover{
+opacity: .5;
+transition: .5s;
+}
+
+/* Styling the buttons */
+.pixelbinder button{
+  background-color: #fff;
+  border: none;
+  color: #444951;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Garamond', serif;
+  font-size: 16px;
+}
+
+/* Buttons on hover */
+.pixelbinder button:hover{
+  background-color: #FFEB3B;
+  cursor: pointer;
+}
+/* BINDER CSS */

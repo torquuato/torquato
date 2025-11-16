@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>TORQUATO</title>
     <link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico">
-    <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.1">
+    <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.2">
 </head>
 
 <body>
@@ -25,10 +25,96 @@
                         <p>a collection of cliques im a part of hi.</p>
                     </div>
 
+                    <p>pixelbill</p>
+                    <div class="flex">
+                        <!-- BINDER HTML -->
+                        <div class="pixelbinder">
+                            <a href="https://pixelbill.neocities.org/"><img id="pixelbutton"
+                                    src="Pixelbills/pixelbill_site_button2.png"></a><!-- The site button, please keep this in! -->
+                            <!-- CLOSED BOOK -->
+                            <div id="Tab One" class="tabcontent">
+                                <div class="pixelbinderbg">
+                                    <img id="binderbackground" src="Graphics/pixelbillbinderclosed-2.png">
+                                </div>
+                                <a onclick="openCity(event, 'Tab Two')"><button>open ↩</button></a>
+                            </div>
+                            <!-- PAGE -->
+                            <div id="Tab Two" class="tabcontent">
+                                <div class="pixelbinderbg">
+                                    <img id="binderbackground" src="Graphics/pixelbillbinderbackground.png">
+                                    <a href="https://semiroboticperson.neocities.org/" target="_blank"
+                                        title="Avenue Q - made by semiroboticperson">
+                                        <img id="page1" src="Pixelbills/avenueqpixelbill-semiroboticperson.png">
+                                    </a>
+                                    <a href="https://six-letter-notion.neocities.org/" target="_blank">
+                                        <img id="page2" src="Pixelbills/Pixelbill_Beowulf.png"
+                                            title="Beowulf - a Thousand Years of Baggage - made by six-letter-notion">
+                                    </a>
+                                </div>
+                                <a onclick="openCity(event, 'Tab One')" id="defaultOpen"><button>↪ close</button></a>
+                                <a onclick="openCity(event, 'Tab Three')"><button>next ↩</button></a>
+                            </div>
+                            <!-- PAGE -->
+                            <div id="Tab Three" class="tabcontent">
+                                <div class="pixelbinderbg">
+                                    <img id="binderbackground" src="Graphics/pixelbillbinderbackground.png">
+                                    <a href="https://six-letter-notion.neocities.org/" target="_blank">
+                                        <img id="page1" src="Pixelbills/pixelbill_cats.png"
+                                            title="Cats - made by six-letter-notion">
+                                    </a>
+                                    <a href="https://six-letter-notion.neocities.org/" target="_blank"
+                                        title="Company - made by six-letter-notion">
+                                        <img id="page2" src="Pixelbills/pixelbill-company-1-six letter notion.png">
+                                    </a>
+                                </div>
+                                <a onclick="openCity(event, 'Tab Two')"><button>↪ previous</button></a>
+                                <a onclick="openCity(event, 'Tab Four')"><button>next ↩</button></a>
+                            </div>
+                            <!-- PAGE -->
+                            <div id="Tab Four" class="tabcontent">
+                                <div class="pixelbinderbg">
+                                    <img id="binderbackground" src="Graphics/pixelbillbinderbackground.png">
+                                    <a href="https://six-letter-notion.neocities.org/" target="_blank">
+                                        <img id="page1" src="Pixelbills/Pixelbill_DontStopme.png"
+                                            title="Don't Stop Me - made by six-letter-notion">
+                                    </a>
+                                    <a href="https://hillhouse.neocities.org/cliques#pixelbill" target="_blank">
+                                        <img id="page2" src="Pixelbills/pixelbill-ghostquartet-hillhouse.png"
+                                            title="Ghost Quartet - made by hillhouse">
+                                    </a>
+                                </div>
+                                <a onclick="openCity(event, 'Tab Three')"><button>↪ previous</button></a>
+                                <a onclick="openCity(event, 'Tab One')"><button>close ↩</button></a>
+                            </div>
+                        </div>
+                        <!-- BINDER HTML -->
+
+                    </div>
                 </main>
             </div>
         </div>
     </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+    </script>
+    <!-- script that makes tabs funtion, goes right above footer -->
+
 </body>
 
 </html>
