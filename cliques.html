@@ -9,6 +9,20 @@
 </head>
 
 <body>
+    <audio id="bg-music" src="/torquato/assets/music-sotww.mp3" autoplay loop></audio>
+
+    <script>
+        const audio = document.getElementById("bg-music");
+        audio.volume = 0.2;
+
+        audio.muted = false;
+        audio.play().catch(err => {
+            console.log("Autoplay blocked:", err);
+        });
+    </script>
+    <div id="music-box">
+        <p>&gt;music: savior of the waking world - toby fox (homestuck OST)</p>
+    </div>
     <div class="content-wrapper">
         <div class="clique-box">
             <div class="flex">
