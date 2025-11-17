@@ -338,3 +338,7 @@ body *:not(.header):not(.header *){
   height:auto;
   image-rendering:pixelated;
 }
+
+.clique-box{
+  margin-bottom: 0px;
+}
