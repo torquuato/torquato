@@ -372,7 +372,8 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
 }
 
 .sylladex-grid {
-  margin: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   gap: 12px;
