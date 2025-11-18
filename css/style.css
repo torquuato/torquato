@@ -368,6 +368,7 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   height: 500px;
   padding: 10px;
   overflow-y: scroll;
+  overflow-x: hidden;
   position: relative;
 }
 
