@@ -396,12 +396,17 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   cursor: pointer;
 }
 
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .tooltip-wrapper::after {
   content: attr(data-tip);
-  position: fixed;
+  position: absolute;
   left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -10px);
+  bottom: 125%;
+  transform: translateX(-50%);
   background-color: #000000;
   border: 2px solid #ffff00;
   padding: 6px 8px;
@@ -410,37 +415,29 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   font-weight: bold;
   font-size: 12px;
   white-space: nowrap;
-  z-index: 99999;
+  z-index: 1000;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
   box-shadow: 0 0 0 3px #ff8000;
-  border-radius: 4px;
 }
 
 .tooltip-wrapper::before {
   content: '';
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   border-width: 5px;
   border-style: solid;
   border-color: #000000 transparent transparent transparent;
-  z-index: 99999;
+  z-index: 1000;
   opacity: 0;
   transition: opacity 0.2s ease;
+  box-shadow: 0 0 0 3px #ff8000;
 }
 
 .tooltip-wrapper:hover::after,
 .tooltip-wrapper:hover::before {
   opacity: 1;
-}
-
-.tooltip-wrapper:hover::after {
-  bottom: calc(100% + 10px);
-}
-
-.tooltip-wrapper:hover::before {
-  bottom: 100%;
 }
