@@ -344,7 +344,7 @@ body *:not(.header):not(.header *){
   background-color:#000000;
   margin:5px;
   padding: 3px;
-  display: inline-block;
+  display: flex;
   width: fit-content;
   max-width: 100%;
 }
