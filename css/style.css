@@ -384,8 +384,8 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #00ff00;
-  background-color: #111;
+  border: 3px solid #00ff00;
+  background-color: #ffffff;
   padding: 5px;
   height: 90px;
   text-decoration: none;
