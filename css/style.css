@@ -434,7 +434,6 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.2s ease;
-  /* remove box-shadow here */
 }
 
 .tooltip-wrapper:hover::after,
