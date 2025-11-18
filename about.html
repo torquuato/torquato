@@ -2,147 +2,144 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>TORQUATO</title>
-    <link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico" />
-    <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.5">
-  </head>
-  <body>
-    <audio id="bg-music" src="/torquato/assets/music-mcds.mp3" autoplay loop></audio>
 
-    <script>
-        const audio = document.getElementById("bg-music");
-        audio.volume = 0.2;
+<head>
+  <meta charset="UTF-8" />
+  <title>TORQUATO</title>
+  <link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico" />
+  <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.5">
+</head>
 
-        audio.muted = false;
-        audio.play().catch(err => {
-            console.log("Autoplay blocked:", err);
-        });
-    </script>
-    <div id="music-box">
-        <p>&gt;music: dead shuffle - midnight crew: drawing dead (homestuck OST)</p>
-    </div>
-    <div class="content-wrapper">
-      <div class="flex">
-        <main>
-          <a href="/torquato/home">
-            <p style="text-align: center">back to home.html</p>
-          </a>
-          <div class="flex">
-            <img src="/torquato/assets/aboutme.gif" width="300px" />
-          </div>
-          <div class="flex">
-            <div class="width-30">
-              <div class="inner-box profile-box">
-                <div class="profile-left">
-                  <img
-                    src="/torquato/assets/mark.png"
-                    width="100px"
-                    class="gelatine"
-                    style="animation: gelatine 2s infinite"
-                  />
-                </div>
-                <div class="profile-right">
-                  <p class="profile-name">'mark' (torquato)</p>
-                  <div class="button-list">
-                    <a><img src="/torquato/assets/button-iom.gif" /></a>
-                    <a><img src="/torquato/assets/button-ph.gif" /></a>
-                    <a
-                      href="https://www.roblox.com/users/204247331/profile"
-                      target="_blank"
-                      ><img src="/torquato/assets/robloxbuton.png"
-                    /></a>
-                    <a href="https://www.instagram.com/mark.dimayuga/"
-                      ><img src="/torquato/assets/instagrambutton.gif"
-                    /></a>
-                    <a><img src="/torquato/assets/kriswheretfarewe.png" /></a>
-                    <a href="https://steamcommunity.com/id/torquuato/"
-                      ><img src="/torquato/assets/steam.gif"
-                    /></a>
-                  </div>
+<body>
+  <audio id="bg-music" src="/torquato/assets/music-mcds.mp3" autoplay loop></audio>
+
+  <script>
+    const audio = document.getElementById("bg-music");
+    audio.volume = 0.2;
+
+    audio.muted = false;
+    audio.play().catch(err => {
+      console.log("Autoplay blocked:", err);
+    });
+  </script>
+  <div id="music-box">
+    <p>&gt;music: dead shuffle - midnight crew: drawing dead (homestuck OST)</p>
+  </div>
+  <div class="content-wrapper">
+    <div class="flex">
+      <main>
+        <a href="/torquato/home">
+          <p style="text-align: center">back to home.html</p>
+        </a>
+        <div class="flex">
+          <img src="/torquato/assets/aboutme.gif" width="300px" />
+        </div>
+        <div class="flex">
+          <div class="width-30">
+            <div class="inner-box profile-box">
+              <div class="profile-left">
+                <img src="/torquato/assets/mark.png" width="100px" class="gelatine"
+                  style="animation: gelatine 2s infinite" />
+              </div>
+              <div class="profile-right">
+                <p class="profile-name">'mark' (torquato)</p>
+                <div class="button-list">
+                  <a><img src="/torquato/assets/button-iom.gif" /></a>
+                  <a><img src="/torquato/assets/button-ph.gif" /></a>
+                  <a href="https://www.roblox.com/users/204247331/profile" target="_blank"><img
+                      src="/torquato/assets/robloxbuton.png" /></a>
+                  <a href="https://www.instagram.com/mark.dimayuga/"><img
+                      src="/torquato/assets/instagrambutton.gif" /></a>
+                  <a><img src="/torquato/assets/kriswheretfarewe.png" /></a>
+                  <a href="https://steamcommunity.com/id/torquuato/"><img src="/torquato/assets/steam.gif" /></a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <main>
-              <p style="margin: 12px" id="floater">
-                >hi im mark. creator of the famed "mark dimayuga the newsletter"
-                and graphics design extrordinaire.
-              </p>
-            </main>
-            <div class="flex">
+          <main>
+            <p style="margin: 12px" id="floater">
+              >hi im mark. creator of the famed "mark dimayuga the newsletter"
+              and graphics design extrordinaire.
+            </p>
+          </main>
+          <div class="flex">
+            <div id="floater">
               <a href="/torquato/sylladex">
-                <img src="/torquato/assets/captcha-unhighlighted.png" style="width: 150px; margin-left: 5px; margin-right: 5px; margin-bottom: 2px;" id="sylladex-button" id="floater">
+                <img src="/torquato/assets/captcha-unhighlighted.png"
+                  style="width: 150px; margin-left: 5px; margin-right: 5px; margin-bottom: 2px;" id="sylladex-button">
               </a>
             </div>
+
           </div>
-        </main>
-      </div>
-      <div class="flex">
-        <div class="header">
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
-          <img src="/torquato/assets/skullbrain.gif" />
         </div>
+      </main>
+    </div>
+    <div class="flex">
+      <div class="header">
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
+        <img src="/torquato/assets/skullbrain.gif" />
       </div>
-      <div class="flex">
-        <div class="height-600">
-          <img src="/torquato/assets/userprotag.jpg" width="250px" />
-          <img src="/torquato/assets/nyanuser.png" width="250px" />
-          <img src="/torquato/assets/meatcanyon.jpg" width="250px" />
-          <img src="/torquato/assets/indie-games.jpg" width="250px" />
-          <img src="/torquato/assets/knowssecretuserbox.jpg" width="250px" />
-          <img src="/torquato/assets/hanging.png" width="250px" />
-          <img src="/torquato/assets/wendigoon.jpg" width="250px" />
-          <img src="/torquato/assets/daveuser.jpg" width="250px" />
-          <img src="/torquato/assets/pigeonsuser.jpg" width="250px" />
-          <img src="/torquato/assets/mlpuser.jpg" width="250px" />
-        </div>
-        <div class="height-600">
-          <div class="stamps-about">
-            <img src="/torquato/assets/stamp-james.gif" />
-            <img src="/torquato/assets/stamp-parapa.png" />
-            <img src="/torquato/assets/stamp-fire.gif" />
-            <img src="/torquato/assets/stamp-uhhh.png" />
-            <img src="/torquato/assets/stamp-house.gif" />
-            <img src="/torquato/assets/stamp-epic.gif" />
-            <img src="/torquato/assets/stamp-dorito.gif" />
-            <img src="/torquato/assets/stamp-albert.gif" />
-            <img src="/torquato/assets/stamp-wesker.gif" />
-            <img src="/torquato/assets/stamp-trippy.gif" />
-            <img src="/torquato/assets/stamp-hamilton.png" />
-            <img src="/torquato/assets/stamp-kris.png" />
-            <img src="/torquato/assets/stamp-susie.png" />
-            <img src="/torquato/assets/stamp-ralsei.png" />
-            <img src="/torquato/assets/stamp-jinx.gif" />
-            <img src="/torquato/assets/stamp-games.gif" />
-            <img src="/torquato/assets/stamp-gumi.png" />
-            <img src="/torquato/assets/stamp-andre.png" />
-            <img src="/torquato/assets/stamp-mcr.jpg" />
-            <img src="/torquato/assets/stamp-tbp.png" />
-            <img src="/torquato/assets/stamp-sans.gif" />
-            <img src="/torquato/assets/stamp-pinkie.gif" />
-            <img src="/torquato/assets/stamp-stewie.png" />
-            <img src="/torquato/assets/stamp-thief.png" />
-            <img src="/torquato/assets/stamp-jojosiwa.gif" />
-            <img src="/torquato/assets/stamp-cute.png" />
-            <img src="/torquato/assets/stamp-3ds.png" />
-            <img src="/torquato/assets/stamp-paint.jpg" />
-          </div>
+    </div>
+    <div class="flex">
+      <div class="height-600">
+        <img src="/torquato/assets/userprotag.jpg" width="250px" />
+        <img src="/torquato/assets/nyanuser.png" width="250px" />
+        <img src="/torquato/assets/meatcanyon.jpg" width="250px" />
+        <img src="/torquato/assets/indie-games.jpg" width="250px" />
+        <img src="/torquato/assets/knowssecretuserbox.jpg" width="250px" />
+        <img src="/torquato/assets/hanging.png" width="250px" />
+        <img src="/torquato/assets/wendigoon.jpg" width="250px" />
+        <img src="/torquato/assets/daveuser.jpg" width="250px" />
+        <img src="/torquato/assets/pigeonsuser.jpg" width="250px" />
+        <img src="/torquato/assets/mlpuser.jpg" width="250px" />
+      </div>
+      <div class="height-600">
+        <div class="stamps-about">
+          <img src="/torquato/assets/stamp-james.gif" />
+          <img src="/torquato/assets/stamp-parapa.png" />
+          <img src="/torquato/assets/stamp-fire.gif" />
+          <img src="/torquato/assets/stamp-uhhh.png" />
+          <img src="/torquato/assets/stamp-house.gif" />
+          <img src="/torquato/assets/stamp-epic.gif" />
+          <img src="/torquato/assets/stamp-dorito.gif" />
+          <img src="/torquato/assets/stamp-albert.gif" />
+          <img src="/torquato/assets/stamp-wesker.gif" />
+          <img src="/torquato/assets/stamp-trippy.gif" />
+          <img src="/torquato/assets/stamp-hamilton.png" />
+          <img src="/torquato/assets/stamp-kris.png" />
+          <img src="/torquato/assets/stamp-susie.png" />
+          <img src="/torquato/assets/stamp-ralsei.png" />
+          <img src="/torquato/assets/stamp-jinx.gif" />
+          <img src="/torquato/assets/stamp-games.gif" />
+          <img src="/torquato/assets/stamp-gumi.png" />
+          <img src="/torquato/assets/stamp-andre.png" />
+          <img src="/torquato/assets/stamp-mcr.jpg" />
+          <img src="/torquato/assets/stamp-tbp.png" />
+          <img src="/torquato/assets/stamp-sans.gif" />
+          <img src="/torquato/assets/stamp-pinkie.gif" />
+          <img src="/torquato/assets/stamp-stewie.png" />
+          <img src="/torquato/assets/stamp-thief.png" />
+          <img src="/torquato/assets/stamp-jojosiwa.gif" />
+          <img src="/torquato/assets/stamp-cute.png" />
+          <img src="/torquato/assets/stamp-3ds.png" />
+          <img src="/torquato/assets/stamp-paint.jpg" />
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
