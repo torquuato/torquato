@@ -340,5 +340,6 @@ body *:not(.header):not(.header *){
 }
 
 .clique-box{
-  margin-bottom: 0px;
+  border: #ff00ff;
+  padding: 3px;
 }
