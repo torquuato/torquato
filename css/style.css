@@ -420,7 +420,6 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   pointer-events: none;
   transition: opacity 0.2s ease;
   box-shadow: 0 0 0 3px #ff8000;
-  border-radius: 4px;
 }
 
 .tooltip-wrapper::before {
