@@ -443,3 +443,7 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
 .tooltip-wrapper:hover::before {
   opacity: 1;
 }
+
+#sylladex-button:hover {
+  content: url('/torquato/assets/captcha-highlighted.png');
+}
