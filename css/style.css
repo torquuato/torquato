@@ -393,6 +393,11 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   position: relative;
 }
 
+.sylladex-item:hover {
+  animation: mover 0.5s infinite alternate;
+}
+
+
 .sylladex-item img {
   width: 75px;
   height: 75px;
@@ -447,4 +452,12 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
 
 #sylladex-button:hover {
   content: url('/torquato/assets/captcha-highlighted.png');
+}
+
+.sylladex-main::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sylladex-main::-webkit-scrollbar-thumb {
+  background: #00ff00;
 }
