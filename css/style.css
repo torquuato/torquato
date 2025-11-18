@@ -344,4 +344,11 @@ body *:not(.header):not(.header *){
   background-color:#000000;
   margin:5px;
   padding: 3px;
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.clique-box .flex {
+  width: auto;
 }
