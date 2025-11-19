@@ -116,7 +116,7 @@
                         <div class="flex"></div>
                         <p>add my button!</p>
                         <img src="/torquato/assets/torquatoButton.gif">
-                        <p>right-click to save. no hotlinking plz :P</p>
+                        <p>right-click to save. no hotlinking plz :P<br>lmk if u link me @ markdimayuga06@gmail.com</p>
                     </div>
                     <div class="inner-box">
                         <textarea
@@ -244,27 +244,6 @@
             </div>
         </div>
     </div>
-    <script>
-        const audio = document.getElementById("bg-music");
-        const allow = localStorage.getItem("allowAudio");
-
-        // Always allow volume slider to work
-        audio.volume = 0.5;
-
-        // If the user clicked Enter earlier, autoplay unmuted will work
-        if (allow === "true") {
-            audio.muted = false;
-            audio.play().catch(err => {
-                console.log("Autoplay blocked:", err);
-            });
-        } else {
-            // User went directly to the page (no prior click)
-            // Must start muted (browser rule)
-            audio.muted = true;
-            audio.play();
-        }
-    </script>
-    <script src="/torquato/js/music.js"></script>
     <script src="https://melonking.net/scripts/flood.js"></script>
     <script>
         flood.texture = "https://melonking.net/images/flood-goo.png";
