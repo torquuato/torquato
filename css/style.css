@@ -469,3 +469,19 @@ img {
     height: 100%;
     pointer-events: none;
 }
+
+.slime-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;        /* 🟩 THIS is what traps the slime */
+    pointer-events: none;    /* optional: lets clicks through */
+}
+
+#flood-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
