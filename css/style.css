@@ -465,3 +465,8 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
 .margin-2px{
   margin: 2px;
 }
+
+img {
+    position: static !important;
+    z-index: auto !important;
+}
