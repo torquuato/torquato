@@ -7,20 +7,6 @@
     <link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico">
     <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.6">
     <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
-    <style>
-        #flood {
-            position: fixed !important;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1 !important;
-        }
-        body *:not(#flood) {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
 </head>
 
 <body>
@@ -29,15 +15,11 @@
         const audio = document.getElementById("bg-music");
         audio.volume = 0.2;
         audio.muted = false;
-        audio.play().catch(err => {
-            console.log("Autoplay blocked:", err);
-        });
+        audio.play().catch(err => { console.log("Autoplay blocked:", err); });
     </script>
-
     <div id="music-box">
         <p>&gt;music: karkat's theme - toby fox: alterniabound (homestuck OST)</p>
     </div>
-
     <div class="content-wrapper">
         <div class="header">
             <div class="flex">
@@ -57,7 +39,6 @@
                 </a>
             </div>
         </div>
-
         <div class="flex">
             <aside>
                 <h3>--nav</h3>
@@ -68,7 +49,6 @@
                 <li><a href="/torquato/newsletter-log">>newsletter</a></li>
                 <li><a href="/torquato/useful-resources">>useful-resources</a></li>
             </aside>
-
             <main>
                 <img src="/torquato/assets/torquatoh1.gif" height="50px">
                 <div class="inner-row">
@@ -87,7 +67,6 @@
                 </div>
             </main>
         </div>
-
         <div class="flex">
             <div class="width-30">
                 <div class="webrings">
@@ -102,6 +81,7 @@
                                 <a href='https://webring.dinhe.net/next/https://torquuato.github.io/torquato/'
                                     style="text-decoration: none; color: #00ff00;"> → </a>
                             </div>
+                            <br>
                         </li>
                         <li>
                             <p style="text-align: center;">gfd-kris</p>
@@ -125,7 +105,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="width-30">
                 <div class="inner-row">
                     <div class="inner-box">
@@ -140,7 +119,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="width-30">
                 <div class="flex">
                     <a href="https://torquato.atabook.org/?page=1" style="text-align: center;">
@@ -150,7 +128,6 @@
                 </div>
             </div>
         </div>
-
         <div class="flex">
             <div class="width-40">
                 <div class="hollis">
@@ -171,73 +148,22 @@
                             src='https://www.counter12.com/ad.js?id=yA06W6C689ybwdx3'></script>
                     </div>
                 </div>
-                <div class="flex"><a href="https://info.flagcounter.com/NNrZ"><img src="https://s01.flagcounter.com/count2/NNrZ/bg_000000/txt_FFFFFF/border_FF00FF/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" height="119px"></a></div>
-                <div class="flex"><a href="https://www.mabsland.com/Adoption.html" target="_blank"><img src="/torquato/assets/Censor_14a .gif" style="margin: 3px;"></a></div>
+                <div class="flex"><a href="https://info.flagcounter.com/NNrZ"><img
+                            src="https://s01.flagcounter.com/count2/NNrZ/bg_000000/txt_FFFFFF/border_FF00FF/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/"
+                            alt="Flag Counter" height="100%"></a></div>
+                <div class="flex"><a href="https://www.mabsland.com/Adoption.html" target="_blank"><img
+                            src="/torquato/assets/Censor_14a .gif" style="margin: 3px;"></a></div>
             </div>
-
             <div class="height-300-width-100">
                 <a href="https://jamesland.org/tips#:~:text=JS%20Fish%20Swim%20Animation">
-                <p style="margin: 0px; font-size: small; text-decoration: none;">'fish script' by jamesland</p>
+                    <p style="margin: 0px; font-size: small; text-decoration: none;">'fish script' by jamesland</p>
                 </a>
                 <div class="fishContainer">
                     <div class="fish" id="fish"><a href="https://youtu.be/7VEVipIkcDo?si=ye5W0qA7hbjDdk6b"></a></div>
                 </div>
-                <script>
-                    function getRandomPosition(currentX, currentY, fish, container) {
-                        const maxOffset = 100;
-                        const fishRect = fish.getBoundingClientRect();
-                        const containerRect = container.getBoundingClientRect();
-                        let x = currentX + (Math.random() * maxOffset * 2 - maxOffset);
-                        let y = currentY + (Math.random() * maxOffset * 2 - maxOffset);
-                        const maxX = containerRect.width - fishRect.width;
-                        const maxY = containerRect.height - fishRect.height;
-                        x = Math.max(0, Math.min(x, maxX));
-                        y = Math.max(0, Math.min(y, maxY));
-                        return [x, y];
-                    }
-                    function lerp(start, end, t) {
-                        return start * (1 - t) + end * t;
-                    }
-                    function swimFish() {
-                        const fish = document.getElementById('fish');
-                        const container = fish.parentElement || document.body;
-                        const containerRect = container.getBoundingClientRect();
-                        const fishRect = fish.getBoundingClientRect();
-                        let currentX = parseFloat(fish.style.left) || (containerRect.width - fishRect.width) / 2;
-                        let currentY = parseFloat(fish.style.top) || (containerRect.height - fishRect.height) / 2;
-                        let target = getRandomPosition(currentX, currentY, fish, container);
-                        let direction = target[0] > currentX ? 'right' : 'left';
-                        let startTime = null;
-                        const duration = 3000;
-                        function animateFish(timestamp) {
-                            if (!startTime) startTime = timestamp;
-                            let progress = (timestamp - startTime) / duration;
-                            if (progress > 1) progress = 1;
-                            const t = progress * progress * (3 - 2 * progress);
-                            const x = lerp(currentX, target[0], t);
-                            const y = lerp(currentY, target[1], t);
-                            fish.style.left = x + 'px';
-                            fish.style.top = y + 'px';
-                            fish.style.position = 'absolute';
-                            fish.style.transform = direction === 'right' ? 'scaleX(-1)' : 'scaleX(1)';
-                            if (progress < 1) {
-                                requestAnimationFrame(animateFish);
-                            } else {
-                                currentX = target[0];
-                                currentY = target[1];
-                                target = getRandomPosition(currentX, currentY, fish, container);
-                                direction = target[0] > currentX ? 'right' : 'left';
-                                startTime = timestamp;
-                                requestAnimationFrame(animateFish);
-                            }
-                        }
-                        requestAnimationFrame(animateFish);
-                    }
-                    window.addEventListener('load', swimFish);
-                </script>
+                <div id="flood-container" style="width:100%; height:100%; position:relative;"></div>
             </div>
         </div>
-
         <div class="header">
             <div class="flex">
                 <img src="/torquato/assets/mario.gif" height="100" style="margin:2px;">
@@ -263,9 +189,9 @@
             </div>
         </div>
     </div>
-
     <script src="https://melonking.net/scripts/flood.js"></script>
     <script>
+        flood.container = document.getElementById('flood-container');
         flood.texture = "https://melonking.net/images/flood-goo.png";
         flood.textureWidth = 256;
         flood.textureHeight = 256;
@@ -281,6 +207,7 @@
         flood.msg.four = "H0NK!";
         flood.msg.five = "eVeRyThInG iS sMeArEd In s0p0r sLiMe!";
         flood.msg.six = "'h0nk :o)'";
+        flood.init();
     </script>
 </body>
 

@@ -5,37 +5,28 @@ body {
   background-size: 220px 220px;
   animation: bg-scrolling 150s linear infinite;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 @keyframes bg-scrolling {
-  from { background-position: 0 0; }
-  to { background-position: 100% 100%; }
-}
+  from {
+    background-position: 0 0;
+  }
 
-.slime-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("/torquato/assets/slime.gif") repeat;
-  z-index: -2;
-  pointer-events: none;
+  to {
+    background-position: 100% 100%;
+  }
 }
 
 .content-wrapper {
   width: 1255px;
   margin: 0 auto;
   position: relative;
-  z-index: 0;
 }
 
 .flex {
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: 0;
 }
 
 .flex-2 {
@@ -43,7 +34,6 @@ body {
   justify-content: center;
   height: 195px;
   position: relative;
-  z-index: 0;
 }
 
 a:visited {
@@ -62,7 +52,6 @@ aside {
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
-  z-index: 0;
 }
 
 aside::-webkit-scrollbar {
@@ -80,16 +69,15 @@ main {
   width: 100%;
   padding: 5px;
   position: relative;
-  z-index: 0;
 }
 
-.flex .width-30, .flex .width-40 {
+.flex .width-30,
+.flex .width-40 {
   border: 2px solid #ff00ff;
   background-color: #000000;
   margin: 5px;
   padding: 5px;
   position: relative;
-  z-index: 0;
 }
 
 .flex .width-30 {
@@ -109,14 +97,12 @@ main {
   display: flex;
   gap: 10px;
   position: relative;
-  z-index: 0;
 }
 
 .inner-box {
   flex: 1;
   padding: 10px;
   position: relative;
-  z-index: 0;
 }
 
 .inner-box textarea {
@@ -128,15 +114,33 @@ main {
 }
 
 @keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-5px); }
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes gelatine {
-  from, to { transform: scale(1,1); }
-  25% { transform: scale(0.9,1.1); }
-  50% { transform: scale(1.1,0.9); }
-  75% { transform: scale(0.98,1.02); }
+
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+
+  75% {
+    transform: scale(0.98, 1.02);
+  }
 }
 
 .profile-box {
@@ -144,7 +148,6 @@ main {
   gap: 10px;
   align-items: flex-start;
   position: relative;
-  z-index: 0;
 }
 
 .profile-left {
@@ -181,33 +184,27 @@ main {
   background: #ff00ff;
 }
 
-.height-600, .height-300-width-100 {
+.height-600 {
+  width: 100%;
+  height: 200px;
   border: 2px solid #ff00ff;
   background-color: #000000;
   margin: 5px;
   padding: 5px;
-  position: relative;
-  z-index: 0;
-}
-
-.height-600 {
-  width: 100%;
-  height: 200px;
   overflow-y: auto;
   text-align: center;
-}
-
-.height-600::-webkit-scrollbar {
-  width: 6px;
-}
-
-.height-600::-webkit-scrollbar-thumb {
-  background: #00ff00;
+  position: relative;
 }
 
 .height-300-width-100 {
   width: 100%;
   height: 326px;
+  border: 2px solid #ff00ff;
+  background-color: #000000;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .fishContainer {
@@ -232,25 +229,14 @@ main {
   height: 55px;
 }
 
-#flood {
-  position: fixed !important;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1 !important;
-}
-
 iframe {
   position: relative;
-  z-index: 10;
 }
 
 .webrings {
   max-height: 100%;
   overflow-y: scroll;
   position: relative;
-  z-index: 0;
 }
 
 .webrings::-webkit-scrollbar {
@@ -265,9 +251,9 @@ iframe {
   margin: 0;
 }
 
-.header {
-  position: relative;
-  z-index: 0;
+img {
+  position: static !important;
+  z-index: auto !important;
 }
 
 #music-box {
@@ -275,9 +261,19 @@ iframe {
   bottom: 20px;
   left: 20px;
   text-align: center;
-  z-index: 9999;
 }
 
+#volume-slider {
+  width: 80px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#music-toggle {
+  display: block;
+  margin: 5px auto 0;
+  cursor: pointer;
+}
 
 #music-box p {
   margin: 0;
@@ -286,9 +282,72 @@ iframe {
   background-color: #000000;
   font-size: 10px;
   position: relative;
-  z-index: 10000;
 }
 
+.tabcontent {
+  display: none;
+}
+
+.pixelbinder {
+  width: fit-content;
+  position: relative;
+  padding: 10px;
+  background-image: url("Graphics/dark-stained-timber-13504-in-architextures.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  text-align: center;
+  image-rendering: pixelated;
+}
+
+.pixelbinderbg {
+  width: 181px;
+  height: 100px;
+  position: relative;
+  margin: 10px 0;
+  text-align: left;
+}
+
+#binderbackground {
+  z-index: 1;
+}
+
+.pixelbinder button {
+  background-color: #fff;
+  border: none;
+  color: #444951;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Garamond', serif;
+  font-size: 16px;
+}
+
+.pixelbinder button:hover {
+  background-color: #FFEB3B;
+  cursor: pointer;
+}
+
+.binder-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 181px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  width: 65px;
+  height: auto;
+  image-rendering: pixelated;
+}
 
 .clique-box {
   border: 2px solid #ff00ff;
@@ -300,7 +359,9 @@ iframe {
   max-width: 100%;
 }
 
-.clique-box .flex { width: auto; }
+.clique-box .flex {
+  width: auto;
+}
 
 .sylladex-main {
   border: 2px solid #ff00ff;
@@ -365,7 +426,6 @@ iframe {
   font-weight: bold;
   font-size: 12px;
   white-space: nowrap;
-  z-index: 1000;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
@@ -381,7 +441,6 @@ iframe {
   border-width: 5px;
   border-style: solid;
   border-color: #000000 transparent transparent transparent;
-  z-index: 1000;
   opacity: 0;
   transition: opacity 0.2s ease;
 }
@@ -405,9 +464,4 @@ iframe {
 
 .margin-2px {
   margin: 2px;
-}
-
-img {
-  position: static !important;
-  z-index: auto !important;
 }
