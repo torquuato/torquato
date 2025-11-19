@@ -461,3 +461,7 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
 .sylladex-main::-webkit-scrollbar-thumb {
   background: #00ff00;
 }
+
+.margin-2px{
+  margin: 2px;
+}
