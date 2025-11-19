@@ -5,6 +5,7 @@ body {
   background-size: 220px 220px;
   animation: bg-scrolling 150s linear infinite;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 @keyframes bg-scrolling {
