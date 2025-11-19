@@ -54,11 +54,11 @@ aside {
   position: relative;
 }
 
-aside::-webkit-scrollbar {
+*::-webkit-scrollbar {
   width: 6px;
 }
 
-aside::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #00ff00;
 }
 
