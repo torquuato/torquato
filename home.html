@@ -210,17 +210,20 @@
         flood.msg.five = "eVeRyThInG iS sMeArEd In s0p0r sLiMe!";
         flood.msg.six = "'h0nk :o)'";
         flood.init();
-        const slimeCanvas = document.getElementById("slimeCanvas");
-    const slimeWrapper = document.querySelector(".slime-wrapper");
+        setTimeout(() => {
+            const slimeCanvas = document.getElementById("slimeCanvas");
+            const slimeWrapper = document.querySelector(".slime-wrapper");
 
-    if (slimeCanvas && slimeWrapper) {
-        slimeWrapper.appendChild(slimeCanvas);
-        slimeCanvas.style.width = "100%";
-        slimeCanvas.style.height = "100%";
-        slimeCanvas.style.position = "absolute";
-        slimeCanvas.style.top = "0";
-        slimeCanvas.style.left = "0";
-    }
+            if (slimeCanvas && slimeWrapper) {
+                slimeWrapper.appendChild(slimeCanvas);
+
+                slimeCanvas.style.width = "100%";
+                slimeCanvas.style.height = "100%";
+                slimeCanvas.style.position = "absolute";
+                slimeCanvas.style.top = "0";
+                slimeCanvas.style.left = "0";
+            }
+        }, 50);
     </script>
 </body>
 
