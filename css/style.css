@@ -256,6 +256,11 @@ img {
   z-index: auto !important;
 }
 
+canvas#slimeCanvas {
+  position: absolute !important;
+  z-index: 2 !important;
+}
+
 #music-box {
   position: fixed;
   bottom: 20px;
