@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,25 +5,39 @@
     <meta charset="UTF-8">
     <title>TORQUATO</title>
     <link rel="icon" type="image/x-icon" href="/torquato/assets/eagle.ico">
-    <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.5">
+    <link rel="stylesheet" href="/torquato/css/style.css?v=1.1.6">
     <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        #flood {
+            position: fixed !important;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1 !important;
+        }
+        body *:not(#flood) {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
     <audio id="bg-music" src="/torquato/assets/music-kk-theme.mp3" autoplay loop></audio>
-
     <script>
         const audio = document.getElementById("bg-music");
         audio.volume = 0.2;
-
         audio.muted = false;
         audio.play().catch(err => {
             console.log("Autoplay blocked:", err);
         });
     </script>
+
     <div id="music-box">
         <p>&gt;music: karkat's theme - toby fox: alterniabound (homestuck OST)</p>
     </div>
+
     <div class="content-wrapper">
         <div class="header">
             <div class="flex">
@@ -45,6 +57,7 @@
                 </a>
             </div>
         </div>
+
         <div class="flex">
             <aside>
                 <h3>--nav</h3>
@@ -55,6 +68,7 @@
                 <li><a href="/torquato/newsletter-log">>newsletter</a></li>
                 <li><a href="/torquato/useful-resources">>useful-resources</a></li>
             </aside>
+
             <main>
                 <img src="/torquato/assets/torquatoh1.gif" height="50px">
                 <div class="inner-row">
@@ -70,8 +84,10 @@
                             <img src="/torquato/assets/eye.gif" width="200px">
                         </div>
                     </div>
+                </div>
             </main>
         </div>
+
         <div class="flex">
             <div class="width-30">
                 <div class="webrings">
@@ -86,7 +102,6 @@
                                 <a href='https://webring.dinhe.net/next/https://torquuato.github.io/torquato/'
                                     style="text-decoration: none; color: #00ff00;"> → </a>
                             </div>
-                            <br>
                         </li>
                         <li>
                             <p style="text-align: center;">gfd-kris</p>
@@ -110,6 +125,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="width-30">
                 <div class="inner-row">
                     <div class="inner-box">
@@ -124,6 +140,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="width-30">
                 <div class="flex">
                     <a href="https://torquato.atabook.org/?page=1" style="text-align: center;">
@@ -133,6 +150,7 @@
                 </div>
             </div>
         </div>
+
         <div class="flex">
             <div class="width-40">
                 <div class="hollis">
@@ -156,6 +174,7 @@
                 <div class="flex"><a href="https://info.flagcounter.com/NNrZ"><img src="https://s01.flagcounter.com/count2/NNrZ/bg_000000/txt_FFFFFF/border_FF00FF/columns_2/maxflags_10/viewers_0/labels_1/pageviews_0/flags_0/percent_0/" alt="Flag Counter" height="100%"></a></div>
                 <div class="flex"><a href="https://www.mabsland.com/Adoption.html" target="_blank"><img src="/torquato/assets/Censor_14a .gif" style="margin: 3px;"></a></div>
             </div>
+
             <div class="height-300-width-100">
                 <a href="https://jamesland.org/tips#:~:text=JS%20Fish%20Swim%20Animation">
                 <p style="margin: 0px; font-size: small; text-decoration: none;">'fish script' by jamesland</p>
@@ -218,6 +237,7 @@
                 </script>
             </div>
         </div>
+
         <div class="header">
             <div class="flex">
                 <img src="/torquato/assets/mario.gif" height="100" style="margin:2px;">
@@ -243,6 +263,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://melonking.net/scripts/flood.js"></script>
     <script>
         flood.texture = "https://melonking.net/images/flood-goo.png";

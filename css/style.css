@@ -12,6 +12,17 @@ body {
   to { background-position: 100% 100%; }
 }
 
+.slime-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/torquato/assets/slime.gif") repeat;
+  z-index: -2;
+  pointer-events: none;
+}
+
 .content-wrapper {
   width: 1255px;
   margin: 0 auto;
@@ -226,7 +237,7 @@ main {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0 !important;
+  z-index: -1 !important;
 }
 
 iframe {
@@ -253,8 +264,10 @@ iframe {
   margin: 0;
 }
 
-.header { position: relative; z-index: -1; }
-body *:not(.header):not(.header *) { position: relative; z-index: 1; }
+.header {
+  position: relative;
+  z-index: 0;
+}
 
 #music-box {
   position: fixed;
@@ -264,17 +277,6 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   z-index: 9999;
 }
 
-#volume-slider {
-  width: 80px;
-  cursor: pointer;
-  margin-top: 5px;
-}
-
-#music-toggle {
-  display: block;
-  margin: 5px auto 0;
-  cursor: pointer;
-}
 
 #music-box p {
   margin: 0;
@@ -286,67 +288,6 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   z-index: 10000;
 }
 
-.tabcontent { display: none; }
-
-.pixelbinder {
-  width: fit-content;
-  position: relative;
-  padding: 10px;
-  background-image: url("Graphics/dark-stained-timber-13504-in-architextures.jpg");
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid black;
-  text-align: center;
-  image-rendering: pixelated;
-}
-
-.pixelbinderbg {
-  width: 181px;
-  height: 100px;
-  position: relative;
-  margin: 10px 0;
-  text-align: left;
-}
-
-#binderbackground { z-index: 1; }
-
-.pixelbinder button {
-  background-color: #fff;
-  border: none;
-  color: #444951;
-  text-align: center;
-  display: inline-block;
-  font-family: 'Garamond', serif;
-  font-size: 16px;
-}
-
-.pixelbinder button:hover {
-  background-color: #FFEB3B;
-  cursor: pointer;
-}
-
-.binder-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 181px;
-  height: 100px;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.slot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.poster {
-  width: 65px;
-  height: auto;
-  image-rendering: pixelated;
-}
 
 .clique-box {
   border: 2px solid #ff00ff;
@@ -396,7 +337,6 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
 .sylladex-item:hover {
   animation: mover 0.5s infinite alternate;
 }
-
 
 .sylladex-item img {
   width: 75px;
@@ -462,11 +402,11 @@ body *:not(.header):not(.header *) { position: relative; z-index: 1; }
   background: #00ff00;
 }
 
-.margin-2px{
+.margin-2px {
   margin: 2px;
 }
 
 img {
-    position: static !important;
-    z-index: auto !important;
+  position: static !important;
+  z-index: auto !important;
 }
