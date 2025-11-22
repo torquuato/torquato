@@ -1,56 +1,76 @@
-
 .info-box-2col {
-    border: 2px solid #ff00ff;
-    background-color: #000000;
-    padding: 10px;
-    margin: 10px auto;
-    width: 100%;
-    max-width: 850px;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #ff00ff;
+  background-color: #000000;
+  padding: 10px;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 900px;
+  color: #ffffff;
 }
 
+.info-left {
+  flex: 1 1 320px;
+  max-width: 320px;
+  margin-right: 20px;
+}
+
+.info-right {
+  flex: 2 1 500px;
+  background: #111111;
+  border: 2px solid #00ff00;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 14px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+
 .info-title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #ff00ff;
-    font-size: 22px;
-    font-style: italic;
+  color: #ff00ff;
+  font-style: italic;
+  margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .info-image {
-    width: 260px;
-    display: block;
-    margin: 0 auto 15px auto;
-    border: 2px solid #00ff00;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+  display: block;
+  width: 100%;
+  border: 2px solid #00ff00;
+  margin-bottom: 15px;
 }
 
 .info-section {
-    background: #ffffff;
-    color: #000000;
-    border: 2px solid #00ff00;
-    border-radius: 3px;
-    padding: 6px;
-    font-size: 12px;
-    max-height: 130px;
-    overflow-y: auto;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #00ff00;
+  border-radius: 3px;
+  padding: 6px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  max-height: 120px;
+  overflow-y: auto;
 }
 
 .info-section h3 {
-    margin: 0 0 5px 0;
-    font-size: 14px;
-    color: #ff00ff;
+  margin: 0 0 5px 0;
+  color: #ff00ff;
+  font-size: 14px;
 }
 
-.info-section::-webkit-scrollbar {
-    width: 6px;
+.info-section ul,
+.info-section p {
+  margin: 0;
 }
+
+.info-right::-webkit-scrollbar,
+.info-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.info-right::-webkit-scrollbar-thumb,
 .info-section::-webkit-scrollbar-thumb {
-    background: #00ff00;
+  background: #00ff00;
 }
