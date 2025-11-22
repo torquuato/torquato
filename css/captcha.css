@@ -1,3 +1,8 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
 .info-box {
     border: 2px solid #ff00ff;
     background-color: #000000;
