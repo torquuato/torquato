@@ -1,18 +1,11 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
 
-.info-box {
+.info-box-2col {
     border: 2px solid #ff00ff;
     background-color: #000000;
     padding: 10px;
     margin: 10px auto;
     width: 100%;
-    max-width: 360px;
-    height: 450px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    max-width: 850px;
     position: relative;
 }
 
@@ -21,45 +14,43 @@
     margin-top: 0;
     margin-bottom: 10px;
     color: #ff00ff;
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
 }
 
 .info-image {
-    width: 100%;
-    border: 2px solid #00ff00;
-    margin-bottom: 8px;
+    width: 260px;
     display: block;
+    margin: 0 auto 15px auto;
+    border: 2px solid #00ff00;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
 
 .info-section {
-    background: #111111;
+    background: #ffffff;
+    color: #000000;
     border: 2px solid #00ff00;
     border-radius: 3px;
     padding: 6px;
-    margin-bottom: 8px;
     font-size: 12px;
-    max-height: 80px;
+    max-height: 130px;
     overflow-y: auto;
 }
 
 .info-section h3 {
-    margin: 0 0 5px;
-    font-size: 13px;
+    margin: 0 0 5px 0;
+    font-size: 14px;
     color: #ff00ff;
 }
 
-.info-section ul,
-.info-section p {
-    margin: 0;
-}
-
-.info-box::-webkit-scrollbar,
 .info-section::-webkit-scrollbar {
     width: 6px;
 }
-
-.info-box::-webkit-scrollbar-thumb,
 .info-section::-webkit-scrollbar-thumb {
     background: #00ff00;
 }
