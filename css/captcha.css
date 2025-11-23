@@ -75,7 +75,7 @@
 .info-section::-webkit-scrollbar {
     width: 6px;
 }
-
+.info-box-2col::-webkit-scrollbar-thumb,
 .info-right::-webkit-scrollbar-thumb,
 .info-section::-webkit-scrollbar-thumb {
     background: #ff00ff;
