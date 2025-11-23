@@ -17,6 +17,7 @@
     flex: 1 1 200px;
     max-width: 200px;
     margin-right: 20px;
+    height: 100%;
     overflow: hidden;
     overflow-y: auto;
 }
