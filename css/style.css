@@ -172,6 +172,7 @@ main {
   gap: 5px;
   max-height: 120px;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 4px;
   align-items: center;
 }
