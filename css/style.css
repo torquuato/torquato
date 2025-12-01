@@ -492,7 +492,6 @@ canvas#slimeCanvas {
   z-index: 1 !important;
 }
 
-
 #cdr {
   color: #ff00ff;
 }
@@ -524,14 +523,15 @@ canvas#slimeCanvas {
   position: relative;
 }
 
-
 .project img {
   filter: blur(2px);  
   height: 120px;
   width: 120px;
+  overflow: none;
   transition: ease 0.5s;
 }
 
 .project img:hover {
   filter: none;
+  size: 120%
 }
