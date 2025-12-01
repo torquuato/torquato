@@ -503,6 +503,17 @@ canvas#slimeCanvas {
   z-index: 999999;
 }
 
+.project-grid {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .project {
     display: flex;
     flex-direction: column; 
