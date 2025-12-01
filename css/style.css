@@ -523,3 +523,8 @@ canvas#slimeCanvas {
   text-decoration: none;
   position: relative;
 }
+
+.project img{
+  height: 120px;
+  width: 120px;
+}
