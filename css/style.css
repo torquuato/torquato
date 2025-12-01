@@ -503,36 +503,38 @@ canvas#slimeCanvas {
   z-index: 999999;
 }
 
-.project-grid {
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 12px;
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ff00ff;
+    padding: 10px;
+    height: 120px;
+    text-decoration: none;
+    position: relative;
 }
 
+.project-content {
+    width: 100%;
+    text-align: center;
+}
 
-.project {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid #ff00ff;
-  padding: 0px;
-  height: 120px;
-  text-decoration: none;
-  position: relative;
+.project-text {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .project img {
-  filter: blur(2px);  
-  height: 120px;
-  width: 120px;
-  overflow: none;
-  transition: ease 0.5s;
+    filter: blur(2px);
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    transition: ease 0.5s;
 }
 
 .project img:hover {
-  filter: none;
+    filter: none;
 }
