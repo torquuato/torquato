@@ -567,6 +567,10 @@ canvas#slimeCanvas {
     transition: ease 0.5s;
 }
 
-.project img:hover {
+.project:hover img {
     filter: blur(2px);
+}
+
+.project-content:hover img {
+    filter: none;
 }
