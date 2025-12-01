@@ -516,7 +516,7 @@ canvas#slimeCanvas {
 
 .project {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 3px solid #ff00ff;
@@ -528,8 +528,12 @@ canvas#slimeCanvas {
 }
 
 .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
+    height: 100%;
     position: relative;
 }
 
@@ -542,11 +546,11 @@ canvas#slimeCanvas {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: -20px; 
+    top: -20px;
     left: 0;
     width: 100%;
     text-align: center;
-    transition: opacity 0.3s ease, visibility 0s 0.3s; 
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
     z-index: 1;
 }
 
@@ -557,11 +561,12 @@ canvas#slimeCanvas {
 }
 
 .project img {
-    filter:none;
-    height: 120px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: ease 0.5s;
 }
 
 .project img:hover {
-      filter: blur(2px);
-    height: 120px;
+    filter: blur(2px);
 }
