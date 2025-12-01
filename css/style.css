@@ -546,13 +546,15 @@ canvas#slimeCanvas {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: -20px;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
     transition: opacity 0.3s ease, visibility 0s 0.3s;
     z-index: 1;
 }
+
 
 .project:hover .project-text {
     opacity: 1;
