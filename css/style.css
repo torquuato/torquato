@@ -549,3 +549,8 @@ canvas#slimeCanvas {
     filter: blur(2px);
     height: 120px;
 }
+
+.project img:hover {
+    filter:none;
+    height: 120px;
+}
