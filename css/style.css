@@ -513,7 +513,6 @@ canvas#slimeCanvas {
     width: 100%;
     box-sizing: border-box;
 }
-
 .project {
     display: flex;
     flex-direction: column;
