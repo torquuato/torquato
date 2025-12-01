@@ -533,6 +533,4 @@ canvas#slimeCanvas {
 
 .project img:hover {
   filter: none;
-  width: 150px;
-  height: 150px;
 }
