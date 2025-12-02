@@ -40,6 +40,7 @@
             background-color: #eeeeee;
             width: 650px;
             box-sizing: border-box;
+            position: relative;
         }
 
         #content h1 {
@@ -90,4 +91,15 @@
 
         .console-link .text {
             font-size: 14px;
+        }
+        
+        .bottom-bit{
+            position: absolute;
+            bottom: 2px;
+            left: 12px;
+        }
+
+        .bottom-bit a, .bottom-bit span{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
         }
